@@ -9,6 +9,7 @@ import { createStudentValidationSchema } from '../Student/student.validation';
 import { USER_ROLE } from './user.constant';
 import { UserControllers } from './user.controller';
 import { UserValidation } from './user.validation';
+import { User } from './user.model';
 
 const router = express.Router();
 
@@ -53,6 +54,23 @@ router.post(
   auth(USER_ROLE.superAdmin, USER_ROLE.admin),
   validateRequest(UserValidation.changeStatusValidationSchema),
   UserControllers.changeStatus,
+);
+router.post(
+  '/get-user-id',
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { email } = req.body;
+      const user = await User.findOne({ email });
+
+      if (!user) {
+        return res.status(404).json({ success: false, message: 'User not found' });
+      }
+
+      res.status(200).json({ success: true, userId: user.id });
+    } catch (error) {
+      next(error);
+    }
+  }
 );
 
 router.get(

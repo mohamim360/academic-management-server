@@ -40,15 +40,11 @@ const getSingleStudentFromDB = async (id: string) => {
 
 const updateStudentIntoDB = async (id: string, payload: Partial<TStudent>) => {
   try {
-      const { name, guardian, localGuardian, student, ...remainingStudentData } = payload; // Extract student from payload
+      const { name, guardian, localGuardian,  ...remainingStudentData } = payload; // Extract student from payload
       const modifiedUpdatedData: Record<string, unknown> = {};
 
       // Handle the incoming nested student data
-      if (student && Object.keys(student).length) {
-          for (const [key, value] of Object.entries(student)) {
-              modifiedUpdatedData[key] = value;
-          }
-      }
+   
 
       // Collect other fields from the incoming payload
       if (remainingStudentData && Object.keys(remainingStudentData).length) {
