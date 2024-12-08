@@ -6,15 +6,24 @@ This project is a robust backend system designed for managing academic activitie
 ---
 
 ## **Table of Contents**
-1. [Features](#features)  
-2. [ER Diagram](#er-diagram)  
-3. [Project Structure](#project-structure)  
-4. [Installation and Setup](#installation-and-setup)  
-5. [Modules Overview](#modules-overview)  
-6. [API Endpoints](#api-endpoints)  
-7. [Technologies Used](#technologies-used)  
-8. [Future Enhancements](#future-enhancements)  
+1. [Links](#links)  
+2. [Features](#features)  
+3. [ER Diagram](#er-diagram)  
+4. [Project Structure](#project-structure)  
+5. [Installation and Setup](#installation-and-setup)  
+6. [Modules Overview](#modules-overview)  
+7. [API Endpoints](#api-endpoints)  
+8. [Technologies Used](#technologies-used)  
+9. [Future Enhancements](#future-enhancements)  
 
+---
+
+## **Links**
+
+- **Frontend Repository**: [GitHub Link](https://github.com/mohamim360/academic-management)  
+- **Backend Repository**: [GitHub Link](https://github.com/mohamim360/academic-management-server)  
+- **Server Live Application**: [Visit Here](https://academic-management-server.vercel.app/)  
+ 
 ---
 
 ## **Features**
