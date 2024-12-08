@@ -89,7 +89,7 @@ src/
 
 ### 1. **Clone the Repository**
 	 ```bash
-	 git clone <repository-url>
+	 git clone https://github.com/mohamim360/academic-management-serverreadne
 	 cd <repository-name>
 	 ```
 
